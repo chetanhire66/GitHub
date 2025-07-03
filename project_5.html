@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        :root {
+            --gray-color: #37ca92;
+            --aqua-color: #2dc1c1;
+            --red-color: #c2cf0c;
+            --yellow-color: #FFFF00;
+            --black-color: #000000;
+        }
+
+        .nav {
+            height: 100px;
+            background-color: var(--gray-color);
+        }
+
+        .bigbox {
+            margin-top: 10px;
+            height: 700px;
+            background-color: var(--aqua-color);
+            padding: 10px;
+        }
+
+        #box1,
+        #box2 {
+            padding: 80px;
+            background-color: var(--red-color);
+            height: 400px;
+            width: 400px;
+            margin: 70px;
+            display: inline-block;
+        }
+
+        .text {
+            border: 5px solid var(--yellow-color);
+            font-size: 30px;
+            padding: 10px 30px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            border-radius: 10px;
+        }
+
+        .cir {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('logo.jpeg'); /* Make sure 'logo.jpeg' is in the same folder as this HTML file */
+        }
+        .contend{
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav"></div>
+
+    <div class="bigbox">
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </div>
+
+    <div class="text">Welcome to Code Hub 🥂</div>
+    <div class="cir"></div>
+    <div class="contend"></div>
+</body>
+</html>
